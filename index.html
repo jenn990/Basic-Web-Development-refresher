@@ -1,43 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <meta charset="UTF‑8">
+  <title>Jenny Ann Manio ‑ Resume</title>
+  <style>
+    /* Global Reset & print-safe settings */
+    html, body {
+      margin: 0; padding: 0;
+      font-family: Arial, sans-serif;
+      background: none; /* in print, drop any background behind */
+      color: #333;
+    }
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    /* Canvas sets a true 8.5×11in page size */
+    .resume‑canvas {
+      margin: auto;
+      width: 8.5in;
+      min-height: 11in;
+      padding: 0.5in;
+      background: lavender; /* page background if you want a border behind your content */
+    }
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    /* Your resume content box */
+    .container {
+      background: linear-gradient(to bottom right, /* your gradient or color */ #ffe4e1, #fffacd);
+      max-width: 7.5in; /* leave ~0.5in margins on left/right */
+      margin: auto;
+      padding: 30px; border-radius: 10px;
+      color: #333;
+    }
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    /* Headings */
+    h1, h2 {
+      color: #4B0082;
+      margin: 0;
+    }
+    h1 { text-align: center; margin-bottom: 8px; }
+
+    /* Sections, lists, contact styling (unchanged) */
+    ul { list-style: disc; padding-left: 20px; }
+    .section { margin-bottom: 20px; }
+    .contact { text-align: right; font-size: 14px; }
+
+    /* Print cleanup: remove shadows & full page layout */
+    @media print {
+      html, body { width: 8.5in; height: 11in; overflow: hidden; }
+      .resume‑canvas { box-shadow: none; background: white; /* paper‑white for print */ }
+      .container { box-shadow: none; /* no extra print shadows */ }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume‑canvas">
+    <div class="container">
+      <h1> RESUME </h1>
+ <div class="main">
+      <section class="about">
+        <h2>About Me</h2>
+        <p>
+           Hi, I'm Jenny Ann P. Manio. I am the youngest of nine siblings. I love my family and enjoy spending time with them. I like learning new things and meeting new people. I try to do my best in everything I do just for my family.
+        </p>
+
+      <div class="section">
+        <p><strong>Name:</strong> Jenny Ann P. Manio</p>
+        <p><strong>Age:</strong> 20 years old</p>
+        <p><strong>Address:</strong> Sitio Mainang, San Nicolas, Bamban, Tarlac</p>
+
+ <h3>CONTACT</h3>
+<ul>
+        
+        <p>Email: <a href="mailto:maniojenyann6@gmail.com">maniojenyann6@gmail.com</a></p>
+        <p>Phone: <a href="tel:+639706655694">0970 665 5694</a></p>
+</ul>
+       
+ <h3>HOBBIES</h3>
+      <ul>
+        <li>watching k-drama</li>
+        <li>Reading Wattpad Story</li>
+        <li>Listenning Music</li>
+        <li></li>
+      </ul>
+
+        <p><strong>Goal:</strong> To achieve what I want in life</p>
+      </div>
+
+      <div class="section">
+        <section class="education">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>Elementary:</strong> Mainang Resttlement Elementary School </li>
+          <li><strong>High School:</strong> Dapdap High School </li>
+          <li><strong>Senior High:</strong> Dapdap Senior High School </li>
+          <li><strong>College:</strong> Dominican College of Tarlac</li>
+        </ul>
+      </section>
+
+        
+      <div class="section">
+        <h2>Skills</h2>
+        <ul>
+          <li>Basic cooking (fried dishes with a creative twist)</li>
+          <li>Networking fundamentals (CCNA × practical labs)</li>
+          <li>Basic programming (HTML/CSS, easy Python)</li>
+          <li>Team collaboration & communication</li>
+        </ul>
+      </div>
+
+      <h2>Project and Experience</h2>
+        <p>My project now is our SAD project. My experience is mostly about doing the documents. I learned how to write and arrange the important parts of the project and also we got rejected on our document but me and my groups we asked our teacher if we can have another chance to re-defend our project.>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <title>Angry Girl Mood</title>
+  <style>
+    .ascii {
+      font-family: monospace;
+      white-space: pre;
+      color: crimson;
+      background-color: #f9f9f9;
+      padding: 10px;
+      border: 2px dashed #ccc;
+    }
+  </style>
+
+<div class="ascii">
+  (╯°□°）╯︵ ┻━┻ <br>
+  (ง •̀_•́)ง   "You messed with the wrong one."
+</div>
+
+</body>
 </html>
